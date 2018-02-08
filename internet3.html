@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<link href="style.css" rel="stylesheet" type="text/css"> 
+<link href="reset.css" rel="stylesheet" type="text/css"> 
+<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet"> 
+<link rel="stylesheet" href="logoanim/animation_logo.css">
+
+<title> "Emeline Bruyere"</title> 
+</head>
+
+
+	<body>
+		<div id="conteneur">
+			
+			<header>
+
+			
+				<div id="logo">
+					<iframe title="exemple 1 avec iframe" src="logoanim/animation_logo.html" width="200" height="200">
+					</iframe>
+				</div>
+
+				<nav id="nav1">
+					<ul>
+						<a href="index.html" title="projets"><li>projets</li>
+						</a>
+
+
+						<a href="propos.html" title="à propos"><li>à propos</li> </a>
+					
+
+					</ul>
+				</nav>
+
+<section>
+
+<div id="article">
+<h1>Internet 3.0</h1>
+
+
+	<p>
+	  2017</br> <br/>
+	  Ce mini-site web aborde la naissance d'internet en adoptant  le point de vue </br> d' une entité virtuelle : Internet  3.0. Cette dernière défend les idéologies des hackers et son accessibilité pour tous dans un univers nocturne de fête foraine. La base de ce projet était la préface du livre « Aux sources de l'utopie numérique », de Fred Turner. <br/> <br/>
+
+	Site réaliser en HTML5, CSS 3. <br/> <br/>
+	<a href="https://emelinebruyere.github.io/the-internet-3.0/index.html" target="_BLANK"> le site </a>
+	</p>
+
+
+
+</div>
+		
+
+				<div id="slider_internet">
+
+					<!-------------------------------LES IMAGES EN LISTE-->
+
+					<img class="mySlides" src="image/presentation.JPG" width="600px">
+
+					<img class="mySlides" src="image/well.JPG" width="600px">
+
+					<img class="mySlides" src="image/masques.JPG" width="600px">
+					<img class="mySlides" src="image/parc.JPG" width="600px">
+
+
+					<!----------------------------------------LES FLECHES-->
+					<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+					<!-------------------------------ACTION DES FLECHES -->
+					<script type="text/javascript">
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+					    showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+					    var i;
+					    var x = document.getElementsByClassName("mySlides");
+					    if (n > x.length) {slideIndex = 1}
+					    if (n < 1) {slideIndex = x.length} ;
+					    for (i = 0; i < x.length; i++) {
+					        x[i].style.display = "none";
+					    }
+					    x[slideIndex-1].style.display = "block";
+					}
+
+					</script>
+
+
+			</div>
+
+
+
+
+		<nav id="switch">
+					<ul id="internet">
+						<a href="pinocchio.html" title="projet précédent"><li> projet précédent </li></a>
+
+						
+						<a href="paysages.html" title="projet suivant"><li>projet suivant</li></a>
+
+					</ul>
+				</nav>
+
+
+</section>
+
+
+
+			<div id="footer">
+
+				<div id="c2018">
+				<p> copyright Emeline Bruyère, 2018 </p>
+				</div>
+
+				
+
+				<nav id="nav2">
+					<ul>
+						 <a href="mailto:bruyereemeline@gmail.com" target="_BLANK">	
+					<li> <img src="image/mail.png" alt="logo" width="35px"/></li> </a>
+
+					<a href="https://www.instagram.com/wouistii/" title="instagram" target="_BLANK"> <li> <img src="image/instagram.png" alt="logo" width="30px"/></li> </a>
+						
+
+					</ul>
+				</nav>
+
+			</div>
+
+
+		</div>
+
+	</body>
