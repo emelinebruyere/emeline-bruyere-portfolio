@@ -15,7 +15,7 @@ a {
 }
 
 figcaption {
-	opacity: 0%;
+	display: none;
 }
 
 
@@ -435,6 +435,10 @@ footer p {
 	}
 
 
+figcaption {
+	display: none;
+}	
+	
  header{
 
 		position:static;
@@ -644,7 +648,13 @@ p .apropos__texte {
 	}
 
 
-
+figcaption {
+	display: none;
+}
+	
+	
+	
+	
 [id=logo] {
 	font-family: 'Arima Madurai', cursive;
 	font-size : 0.57em;
@@ -785,6 +795,12 @@ body{
 	}
 
 
+figcaption {
+	display: none;
+}	
+	
+	
+	
 nav {
 
 	width: 40%;
@@ -831,6 +847,11 @@ nav {
 		/*background-color: pink;*/
 	}
 
+	
+figcaption {
+	display: none;
+}	
+	
 #conversation  {
 
 	font-size: 0.75em;
