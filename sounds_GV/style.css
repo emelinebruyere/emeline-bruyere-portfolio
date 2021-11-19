@@ -1,14 +1,54 @@
-body {
+
+
+
+
+@media (max-width: 600px){
+
+body  {
 	background-color: black;
+width: 100%;
+margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+background-repeat: no-repeat;
+background-size:100%;
+
 }
 
-section {
 
-	background-color: black;
+
+body[id=ecran1]{
+background-image: url("img/ecran1.jpg");
 }
 
 
-section audio {
-	width:100%;
-	padding-top:10vh;
+[id=bouton]{
+margin-left: 34.5%;
+margin-top:-1%;
+/*border: 3px solid green;*/
+width:48vw;
+
 }
+
+audio {
+	visibility : hidden;
+}
+
+
+
+/*(SVG)*/
+
+circle {
+	transform-origin: 50% 50%;
+	scale :62%;
+}
+
+
+} /*fermeture mediaqueries*/
+
+
+
+
+
