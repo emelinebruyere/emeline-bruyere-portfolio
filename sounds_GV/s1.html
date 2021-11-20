@@ -88,8 +88,22 @@ _____________________ -->
 <script type="text/javascript">
 
 function playAudio() {
-    audioPlayer.play();
-} 
+     if (audioPlayer.paused) {
+
+        audioPlayer.play();
+
+        control.textContent = 'Pause';
+
+    } else {
+
+        audioPlayer.pause();
+
+        control.textContent = 'Play';
+
+    }
+
+}
+ 
 
 
 </script>
