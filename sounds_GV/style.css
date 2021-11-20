@@ -43,7 +43,7 @@ audio {
 
 circle {
 	transform-origin: 50% 50%;
-	scale :62%;
+	transform : scale(0.6, 0.6)
 }
 
 
