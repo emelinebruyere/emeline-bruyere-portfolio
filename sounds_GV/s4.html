@@ -1,29 +1,118 @@
+
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Sound GV </title>
+    <title>Egarement </title>
     <meta charset="UTF-8">
-    <meta name="description" content="Emeline.Bruyère étudiante en Design Graphique. Designer Graphique. illustration">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="pistes de sons pour livre augmenté">
-    <meta property="og:title" content="soud GV">
-    <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css"/>
-    
+    <link rel="normalize" href="normalize.css"/>
+  </head>
 
- </head>
+
+<body id="ecran4"> 
 
 
-    <body>
-      
+<!-- _____________________
 
-     <section>     
-      <audio src="sons/s4.mp3" controls></audio>
-      
+BOUTON
+_____________________ -->
 
-     </section> 
 
-</body> 
+<div id="bouton" >
+<svg id="picto_sonore" onclick="playAudio('sons/s4.mp3')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 219 219"><defs><style>.cls-1{fill:none;stroke:#69ff7b;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>bouton_sonore2</title>
+
+	<circle id="petit" class="cls-1" cx="109.5" cy="109.5" r="46.07">
+		
+    </circle>
+
+
+	<circle id="moyen" class="cls-1" cx="109.5" cy="110.52" r="74.23">
+			<animate 
+           xlink:href="#moyen"
+           attributeName="r"
+           values="74.23;90"
+           dur="2.01s"
+           begin="0s"
+           repeatCount="indefinite"
+		   fill="freeze" />
+
+		     <animate  
+		     xlink:href="#moyen"
+		     attributeName="opacity"
+             values="1;0" dur="2.01s"
+             repeatCount="indefinite"/>	
+    </circle>
+
+
+
+	<circle id="grand" class="cls-1" cx="109.5" cy="109.5" r="107.5">
+			<animate 
+           xlink:href="#grand"
+           attributeName="r"
+           values="107.5;170" 
+           dur="2.02s"
+           begin="0s"
+           repeatCount="indefinite"
+		   fill="freeze"
+		    />
+
+		    <animate  
+		     xlink:href="#grand"
+		     attributeName="opacity"
+             values="1;0" dur="2.02s"
+             repeatCount="indefinite"
+            />	
+    </circle>
+
+
+    </svg>
+   
+
+</div>
+
+<!-- _____________________
+
+FIN BOUTON
+_____________________ --> 
+
+<div id="audio">
+	<audio controls="controls" id='audioPlayer' src="sons/s4.mp3" controls></audio>
+</div>
+
+<!-- _____________________
+PARTIE JS
+_____________________ -->
+
+
+<script type="text/javascript">
+
+/*function playAudio() {
+    audioPlayer.play();
+}*/ 
+
+function playAudio() {
+     if (audioPlayer.paused) {
+
+        audioPlayer.play();
+
+        control.textContent = 'Pause';
+
+    } else {
+
+        audioPlayer.pause();
+
+        control.textContent = 'Play';
+
+    }
+
+}
+ 
+
+
+</script>
+
+ </body> 
 
 
 </html>
