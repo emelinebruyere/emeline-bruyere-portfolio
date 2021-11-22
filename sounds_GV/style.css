@@ -23,6 +23,51 @@ body[id=ecran1]{
 background-image: url("img/ecran1.jpg");
 }
 
+body[id=ecran2]{
+background-image: url("img/ecran2.jpg");
+}
+	
+body[id=ecran3]{
+background-image: url("img/ecran3.jpg");
+}
+	
+body[id=ecran4]{
+background-image: url("img/ecran4.jpg");
+}
+	
+body[id=ecran5]{
+background-image: url("img/ecran5.jpg");
+}
+	
+body[id=ecran6]{
+background-image: url("img/ecran6.jpg");
+}
+
+body[id=ecran7]{
+background-image: url("img/ecran7.jpg");
+}
+
+body[id=ecran8]{
+background-image: url("img/ecran8.jpg");
+}
+
+body[id=ecran9]{
+background-image: url("img/ecran9.jpg");
+}
+	
+body[id=ecran10]{
+background-image: url("img/ecran10.jpg");
+}
+	
+body[id=ecran11]{
+background-image: url("img/ecran11.jpg");
+}
+	
+body[id=ecran12]{
+background-image: url("img/ecran12.jpg");
+}
+	
+	
 
 [id=bouton]{
 margin-left: 34.5%;
